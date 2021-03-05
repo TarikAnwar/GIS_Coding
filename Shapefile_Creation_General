@@ -1,4 +1,5 @@
 """
+
 A function that can be used when wanting to quickly generate set amount of empty shapefiles with no specific attributes from templates. 
 The function takes in an integer argument, as well as the output path. 
 
