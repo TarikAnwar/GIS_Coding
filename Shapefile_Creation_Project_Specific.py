@@ -18,7 +18,7 @@ import os,arcpy
 
 def create_shapefile(image_dir_path,shapefile_template):#creating empty polygon shapefiles from template
     for image in os.listdir(image_dir_path):
-        image=image.replace("-","_").strip(".tif")#"-" character incompatible with arcpy method below, have to temporarily switch to "_"
+        image=image.replace("-","_").strip(".tif")#"-" character from image names incompatible with arcpy method below, have to temporarily switch to "_"
         arcpy.CopyFeatures_management(shapefile_template,image_dir_path+"/{}".format(image))
  
 
